@@ -30,12 +30,12 @@ def twoSum_3(nums, target):
 
     # 타겟에서 첫 번째 수를 뺀 결과를 키로 조회
     for i, num in enumerate(nums):
+        # enumerate(nums) = [(0,2),(1,7),(2,11),(3,15)]
         if target - num in nums_map and i != nums_map[target-num]:
-            print(nums.index(num), nums_map[target-num])
             return nums.index(num), nums_map[target-num]
 
 
-#  and i != nums_map[target-num]
+#  and i != nums_map[target-num] 예외 input = [3,2,4] , 6  output = [0,0] answer = [1,2]
 twoSum_3(nums, target)
 
 # 조회 구조 개선
