@@ -8,12 +8,14 @@ def trap(height):
         return 0
 
     volume = 0
-    left, right = 0, len(height)-1
-    left_max, right_max = height[left], height[right]
+    left = 0
+    right = len(height)-1
+    left_max = height[left]
+    right_max = height[right]
 
     while left < right:
-        left_max, right_max = max(height[left], left_max), max(
-            height[right], right_max)
+        left_max = max(height[left], left_max)
+        right_max = max(height[right], right_max)
 
         if left_max <= right_max:
             volume += left_max - height[left]
@@ -22,7 +24,7 @@ def trap(height):
             volume += right_max - height[right]
             right -= 1
 
-    print(volume)
+        print(volume)
     return volume
 
 
