@@ -39,3 +39,6 @@ def maxProfit(prices):
         profit = max(profit, price-min_price)
 
     return profit
+
+
+def maxProfit(prices)
