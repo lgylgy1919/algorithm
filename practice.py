@@ -1,0 +1,2 @@
+elements = [1, 2, 3]
+print(elements[:])
