@@ -1,11 +1,17 @@
 import collections
 
 
-def maxDepth(root):
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def maxDepth(root: TreeNode) -> int:
     if root is None:
         return 0
     queue = collections.deque([root])
-    print(queue)
     depth = 0
 
     while queue:

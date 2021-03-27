@@ -1,3 +1,6 @@
+import collections
+
+
 def inverTree1(root):
     if root:
         root.left, root.right = self.invertTree1(root.right), self.invertTree1(

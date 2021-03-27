@@ -1,3 +1,5 @@
+import collections
+
 class Solution:
     result: int = 0
 
