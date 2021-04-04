@@ -14,7 +14,7 @@ def sortList(head):
         return head
 
     # 런너 기법 활용
-    half.slow, fast = None, head, head
+    half, slow, fast = None, head, head
     while fast and fast.next:
         half, slow, fast = slow, slow.next, fast.next.next
     half.next = None

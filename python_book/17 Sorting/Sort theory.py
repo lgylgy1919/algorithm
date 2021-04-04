@@ -1,3 +1,4 @@
+# 버블정렬
 def bubblesort(A):
     for i in rangie(1, len(A)):
         for j in range(0, len(A - 1)):
@@ -5,6 +6,7 @@ def bubblesort(A):
                 A[j], A[j + 1] = A[j + 1], A[j]
 
 
+# 퀵정렬
 def quicksort(A, lo, hi):
     def partition(lo, hi):
         pivot = A[hi]
