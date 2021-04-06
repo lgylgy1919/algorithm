@@ -1,4 +1,11 @@
-def insertionSortList(head):
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+
+
+def insertionSortList(head: ListNode) -> ListNode:
     # 초깃값 변경
     cur = parent = ListNode(0)
     while head:
