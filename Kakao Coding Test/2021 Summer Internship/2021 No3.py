@@ -28,7 +28,6 @@ def solution(n, k, cmd):
         elif c == "C":
             numbers[k] = "X"
             deleted.append(k)
-            # k가 가장 아래에 있는지 체크
             test = []
             for i in range(k + 1, len(numbers)):
                 test.append(numbers[i])
@@ -50,16 +49,6 @@ def solution(n, k, cmd):
         else:
             numbers[deleted.pop()] = "O"
 
-        print(numbers, k)
-
     for number in numbers:
         answer += numbers[number]
-    print(answer)
     return answer
-
-
-n = 8
-k = 2
-cmd = ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z"]
-
-solution(n, k, cmd)

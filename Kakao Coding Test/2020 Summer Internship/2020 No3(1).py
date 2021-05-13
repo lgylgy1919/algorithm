@@ -1,5 +1,6 @@
-gems = ["A", "A", "B"]
+# 안되는 테스트 케이스 찾아야 하는데....
 
+gems = ["DIA", "EM", "EM", "RUB", "DIA"]
 l_point = 0
 r_point = len(gems)
 
@@ -19,8 +20,7 @@ while True:
     if sub_gems == new_gems:
         l_point += 1
     else:
-        l_point -= 1
         break
 
 
-print(l_point + 1, r_point)
+print(l_point, r_point)
