@@ -10,6 +10,7 @@ def solution(new_id):
     new_id = new_id.lower()
 
     # 2단계 : 알파벳 소문자, 숫자, ".", "_", "=" 제외 모두 제거
+    # 제거 보다는 새로운 문자열을 붙여 나가는 것이 더 효율적이다.
     for i in new_id:
         if (i.isalpha()) or (i.isdigit()) or (i in ["_", "-", "."]):
             answer.append(i)
