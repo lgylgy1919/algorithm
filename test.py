@@ -1,5 +1,3 @@
-a = "...!@BaT#*..y.abcdefghijklm"
-print(a.replace("..", "."))
-print(a.replace("..", "."))
-
-print(a[3])
+nums = [2, 7, 11, 15]
+nums.sort()
+print(nums)
